@@ -10,6 +10,24 @@
     color: whitesmoke;
 }
 
+.top-bottom-border {
+    border-top: 5px solid grey;;
+    border-right: none;
+    border-left: none;
+    border-bottom: 5px solid grey;
+}
+
+.bottom-border {
+    border-top: none;;
+    border-right: none;
+    border-left: none;
+    border-bottom: 5px dashed grey;
+}
+
+.bg-grey {
+    background-color: grey;
+}
+
 .black {
     color: black;
 }
@@ -18,4 +36,8 @@
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.line-height-1 {
+    line-height: 1.5rem
 }
