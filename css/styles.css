@@ -16,6 +16,18 @@ main {
   background-color: #231f20;
   padding-bottom: 3rem; }
 
+.white {
+  color: whitesmoke; }
+
+.black {
+  color: black; }
+
+.bg-black {
+  background-color: #231f20; }
+
+.bg-grey {
+  background-color: grey; }
+
 .m-0 {
   margin: 0; }
 
@@ -32,6 +44,10 @@ main {
 .mx-1 {
   margin-left: 1rem;
   margin-right: 1rem; }
+
+.mx-3 {
+  margin-left: 3rem;
+  margin-right: 3rem; }
 
 .p-0 {
   padding: 0; }
@@ -66,26 +82,17 @@ main {
 .txt-left {
   text-align: left; }
 
-.white {
-  color: whitesmoke; }
-
 .top-bottom-border {
   border-top: 5px solid grey;
   border-right: none;
-  border-left: none;
-  border-bottom: 5px solid grey; }
+  border-bottom: 5px solid grey;
+  border-left: none; }
 
 .bottom-border {
   border-top: none;
   border-right: none;
-  border-left: none;
-  border-bottom: 5px dashed grey; }
-
-.bg-grey {
-  background-color: grey; }
-
-.black {
-  color: black; }
+  border-bottom: 5px dashed grey;
+  border-left: none; }
 
 .style-cleaner {
   list-style: none;
@@ -100,14 +107,34 @@ main {
   width: 10rem;
   margin-top: 2rem; }
 
+.appear {
+  animation-duration: 5s;
+  animation-name: appear; }
+
+@keyframes appear {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 50; }
+  100% {
+    opacity: 100; } }
+
+.left-to-right {
+  animation-duration: 2s;
+  animation-name: left-to-right; }
+
+@keyframes left-to-right {
+  0% {
+    margin-right: 50vw;
+    background-color: grey; }
+  100% {
+    margin-left: 0; } }
+
 .hide {
   display: none; }
 
 .block {
   display: block; }
-
-#tabletContainer {
-  display: none; }
 
 .r-flex {
   display: flex; }
@@ -125,6 +152,9 @@ main {
 .justify-content-around {
   justify-content: space-around; }
 
+.align-content-left {
+  align-content: flex-start; }
+
 .align-self-center {
   align-self: center; }
 
@@ -133,6 +163,12 @@ main {
 
 .width-2 {
   min-width: 11rem; }
+
+.height-2 {
+  min-height: 10rem; }
+
+#tabletContainer {
+  display: none; }
 
 @media (min-width: 768px) {
   header {
@@ -147,4 +183,5 @@ main {
   #tabletContainer {
     display: flex;
     justify-content: center;
-    background-color: white; } }
+    margin-top: 5rem;
+    min-height: 20rem; } }

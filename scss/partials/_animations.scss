@@ -1,0 +1,31 @@
+.appear {
+    animation-duration: 5s;
+    animation-name: appear;
+  }
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 50;
+    }
+    100% {
+        opacity: 100;
+    }
+}
+
+.left-to-right {
+    animation-duration: 2s;
+    animation-name: left-to-right;
+}
+
+@keyframes left-to-right {
+    0% {
+        margin-right:  50vw;
+        background-color: grey;
+    }
+    100% {
+        margin-left:  0;
+    }
+}

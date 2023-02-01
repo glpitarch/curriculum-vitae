@@ -6,10 +6,6 @@
     display: block;
 }
 
-#tabletContainer {
-    display: none;
-}
-
 .r-flex {
     display: flex;
 }
@@ -31,6 +27,10 @@
     justify-content: space-around;
 }
 
+.align-content-left {
+    align-content: flex-start;
+}
+
 .align-self-center {
     align-self: center;
 }
@@ -41,5 +41,12 @@
 
 .width-2 {
     min-width: 11rem;
+}
+.height-2 {
+    min-height: 10rem;
+}
+
+#tabletContainer {
+    display: none;
 }
 

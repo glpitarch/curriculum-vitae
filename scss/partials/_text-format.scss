@@ -6,30 +6,18 @@
     text-align: left;
 }
 
-.white {
-    color: whitesmoke;
-}
-
 .top-bottom-border {
     border-top: 5px solid grey;;
     border-right: none;
-    border-left: none;
     border-bottom: 5px solid grey;
+    border-left: none;
 }
 
 .bottom-border {
     border-top: none;;
     border-right: none;
-    border-left: none;
     border-bottom: 5px dashed grey;
-}
-
-.bg-grey {
-    background-color: grey;
-}
-
-.black {
-    color: black;
+    border-left: none;
 }
 
 .style-cleaner {
