@@ -5,7 +5,7 @@
   font-family: Arial, Helvetica, sans-serif; }
 
 header {
-  background-color: #efb810;
+  background-color: #e2be51;
   padding-top: 2rem;
   padding-bottom: 2rem; }
 
@@ -46,6 +46,9 @@ main {
 
 .mt-3 {
   margin-top: 3rem; }
+
+.ml-2 {
+  margin-left: 2rem; }
 
 .mx-1 {
   margin-left: 1rem;

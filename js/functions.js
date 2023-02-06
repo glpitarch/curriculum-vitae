@@ -17,29 +17,54 @@ const LargeDeviceProfile = () => {
     profileLargeDeviceContainer.classList.remove('hide')
     profileLargeDeviceContainer.classList.add('block')
     document.getElementById('profileLargeDeviceContainer').innerHTML = `
-        <ul class="white style-cleaner c-flex appear">
-            <li class="mb-2 mt-1">
-                <h4 class="txt-center">Dirección de correo electrónico</h4>
-                <div class="r-flex">
-                    <img src="./assets/images/icons/email.png" alt="Icono de email" width="50">
-                    <span class="align-self-center mx-1">glpitarch@gmail.com</span>
-                </div>
-            </li>
-            <li class="my-2">
-                <h4 class="txt-center">Número de teléfono celular</h4>
-                <div class="r-flex">
-                    <img src="./assets/images/icons/whapp.png" alt="Icono de whatsapp" width="50">
-                    <span class="align-self-center mx-1">+54 9 11 3459-2877</span>
-                </div>
-            </li>
-            <li class="my-2">
-                <h4 class="txt-center">Ubicación</h4>
-                <div class="r-flex">
-                    <img src="./assets/images/icons/location.png" alt="Icono de localización" width="50">
-                    <span class="align-self-center mx-1">Buenos Aires, Argentina</span>
-                </div>
-            </li>
-        </ul>
+        <div class="r-flex">
+            <ul class="white style-cleaner c-flex appear">
+                <li class="mb-2 mt-1">
+                    <h4 class="txt-center">Dirección de correo electrónico</h4>
+                    <div class="r-flex">
+                        <img src="./assets/images/icons/email.png" alt="Icono de email" width="50">
+                        <span class="align-self-center mx-1">glpitarch@gmail.com</span>
+                    </div>
+                </li>
+                <li class="my-2">
+                    <h4 class="txt-center">Número de teléfono celular</h4>
+                    <div class="r-flex">
+                        <img src="./assets/images/icons/whapp.png" alt="Icono de whatsapp" width="50">
+                        <span class="align-self-center mx-1">+54 9 11 3459-2877</span>
+                    </div>
+                </li>
+                <li class="my-2">
+                    <h4 class="txt-center">Ubicación</h4>
+                    <div class="r-flex">
+                        <img src="./assets/images/icons/location.png" alt="Icono de localización" width="50">
+                        <span class="align-self-center mx-1">Buenos Aires, Argentina</span>
+                    </div>
+                </li>
+            </ul>
+            <ul class="white style-cleaner c-flex appear">
+                <li class="mb-2 mt-1 ml-2">
+                    <h4 class="txt-center">Linkedin</h4>
+                    <div class="r-flex">
+                        <img src="./assets/images/icons/linkedin.png" alt="Icono de Linkedin" width="50">
+                        <span class="align-self-center mx-1"><a href="https://www.linkedin.com/" target="blank" class="white">www.linkedin.com</a></span>
+                    </div>
+                </li>
+                <li class="my-2 ml-2">
+                    <h4 class="txt-center">Twitter</h4>
+                    <div class="r-flex">
+                        <img src="./assets/images/icons/twitter.png" alt="Icono de Twitter" width="50">
+                        <span class="align-self-center mx-1"><a href="https://twitter.com/?lang=es" target="blank" class="white">www.twitter.com</a></span>
+                    </div>
+                </li>
+                <li class="my-2 ml-2">
+                    <h4 class="txt-center">Instagram</h4>
+                    <div class="r-flex">
+                        <img src="./assets/images/icons/instagram.png" alt="Icono de Instagram" width="50">
+                        <span class="align-self-center mx-1"><a href="https://www.instagram.com/" target="blank" class="white">www.instagram.com</a></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
     `
 }
 
