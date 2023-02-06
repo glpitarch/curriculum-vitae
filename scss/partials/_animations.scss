@@ -29,3 +29,19 @@
         margin-left:  0;
     }
 }
+
+.bottom-to-top {
+    animation-duration: 2s;
+    animation-name: bottom-to-top;
+}
+
+@keyframes bottom-to-top {
+    0% {
+        margin-top:  10vw;
+        background-color: grey;
+    }
+    100% {
+        margin-top:  0;
+        margin-bottom: 2rem;
+    }
+}
