@@ -7,7 +7,7 @@
 El proyecto es full responsive y fue realizado con la premisa "mobile first" (no fue utilizado en ningun aspecto alguna biblioteca externa como Bootstrap):
 
      1. Dimensión <768px:
-          1.1. El código correspondiente a esta dimensión de dispositivos fue escrito dentro de una "section" ("phoneDeviceContainer") dentro del tag "main".
+          1.1. El código correspondiente a esta dimensión de dispositivos fue escrito dentro de una "section" ("phoneDeviceContainer") del archivo "index.html" dentro                  del tag "main".
 
      2. Dimensión >=768px:
           2.1. El código correspondiente a esta dimensión de dispositivos es creado dinamicamente mediante JS al clickear entre las distintas secciones y apartados.
