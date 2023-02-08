@@ -5,7 +5,7 @@
   font-family: Arial, Helvetica, sans-serif; }
 
 header {
-  background-color: #e2be51;
+  background-color: #fdd55e;
   padding-top: 2rem;
   padding-bottom: 2rem; }
 
@@ -80,10 +80,8 @@ main {
 
 .icons {
   padding: 1rem;
-  margin-bottom: 1rem; }
-
-.container-1 {
-  min-height: 15rem; }
+  margin-bottom: 1rem;
+  animation-duration: 2s; }
 
 .txt-center {
   text-align: center; }
@@ -151,6 +149,28 @@ main {
     margin-top: 0;
     margin-bottom: 2rem; } }
 
+.change-bg-color {
+  animation-duration: 2s;
+  animation-name: change-bg-color; }
+
+@keyframes change-bg-color {
+  0% {
+    background-color: grey; }
+  100% { } }
+
+.bounce:hover {
+  animation-name: bounce;
+  animation-timing-function: ease; }
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-1rem); }
+  100% {
+    transform: translateY(0rem); } }
+
+.title:hover {
+  background-color: #464646; }
+
 .hide {
   display: none; }
 
@@ -187,9 +207,6 @@ main {
 
 .height-2 {
   min-height: 10rem; }
-
-#nonPhoneContainer {
-  display: none; }
 
 @media (min-width: 768px) {
   header {

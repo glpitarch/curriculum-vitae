@@ -1,27 +1,28 @@
 /*----------///_DIMENSION <768px_///----------*/
 /*----------/_List Icons_/----------*/
-profileIcon.addEventListener('click', () => { dataContainer("profileContainer") })
-educationIcon.addEventListener('click', () => { dataContainer("educationContainer") })
-workExperienceIcon.addEventListener('click', () => { dataContainer("workExperienceContainer") })
+profileIcon.addEventListener('click', () => { changeDisplay("profileContainer") })
+educationIcon.addEventListener('click', () => { changeDisplay("educationContainer") })
+workExperienceIcon.addEventListener('click', () => { changeDisplay("workExperienceContainer") })
 /*----------/_Education_/----------*/
-webDeveloperPhoneTitle.addEventListener('click', () => { dataContainer("webDeveloperPhoneContainer") })
-javascriptPhoneTitle.addEventListener('click', () => { dataContainer("javascriptPhoneContainer") })
-othersPhoneTitle.addEventListener('click', () => { dataContainer("othersPhoneContainer") })
-technologistPhoneTitle.addEventListener('click', () => { dataContainer("technologistPhoneContainer") })
+webDeveloperPhoneTitle.addEventListener('click', () => { changeDisplay("webDeveloperPhoneContainer") })
+javascriptPhoneTitle.addEventListener('click', () => { changeDisplay("javascriptPhoneContainer") })
+othersPhoneTitle.addEventListener('click', () => { changeDisplay("othersPhoneContainer") })
+technologistPhoneTitle.addEventListener('click', () => { changeDisplay("technologistPhoneContainer") })
 /*----------/_Work Experience_/----------*/
-developerWorkExperiencePhoneTitle.addEventListener('click', () => { dataContainer("developerWorkExperiencePhoneContainer") })
-technologistWorkExperiencePhoneTitle.addEventListener('click', () => { dataContainer("technologistWorkExperiencePhoneContainer") })
+developerWorkExperiencePhoneTitle.addEventListener('click', () => { changeDisplay("developerWorkExperiencePhoneContainer") })
+technologistWorkExperiencePhoneTitle.addEventListener('click', () => { changeDisplay("technologistWorkExperiencePhoneContainer") })
 
-/*----------///_768px>= DIMENSION_///----------*/
+/*----------///_DIMENSION 768px>=_///----------*/
 /*----------/_List Icons_/----------*/
 largeDeviceProfileIcon.addEventListener('click', LargeDeviceProfile)
 largeDeviceEducationIcon.addEventListener('click', LargeDeviceEducation)
 largeDeviceWorkExperienceIcon.addEventListener('click', LargeDeviceWorkExperience)
 /*----------/_Education_/----------*/
-webDeveloperLargeDeviceTitle.addEventListener('click', () => { dataContainer("webDeveloperLargeDeviceContainer") })
-javascriptLargeDeviceTitle.addEventListener('click', () => { dataContainer("javascriptLargeDeviceContainer") })
-othersLargeDeviceTitle.addEventListener('click', () => { dataContainer("othersLargeDeviceContainer") })
-technologistLargeDeviceTitle.addEventListener('click', () => { dataContainer("technologistLargeDeviceContainer") })
+webDeveloperLargeDeviceTitle.addEventListener('click', () => { changeDisplay("webDeveloperLargeDeviceContainer") })
+javascriptLargeDeviceTitle.addEventListener('click', () => { changeDisplay("javascriptLargeDeviceContainer") })
+othersLargeDeviceTitle.addEventListener('click', () => { changeDisplay("othersLargeDeviceContainer") })
+technologistLargeDeviceTitle.addEventListener('click', () => { changeDisplay("technologistLargeDeviceContainer") })
 /*----------/_Education_/----------*/
-developerWorkExperienceLargeDeviceTitle.addEventListener('click', () => { dataContainer("developerWorkExperienceLargeDeviceContainer") })
-technologistWorkExperienceLargeDeviceTitle.addEventListener('click', () => { dataContainer("technologistWorkExperienceLargeDeviceContainer") })
+developerWorkExperienceLargeDeviceTitle.addEventListener('click', () => { changeDisplay("developerWorkExperienceLargeDeviceContainer") })
+technologistWorkExperienceLargeDeviceTitle.addEventListener('click', () => { changeDisplay("technologistWorkExperienceLargeDeviceContainer") })
+

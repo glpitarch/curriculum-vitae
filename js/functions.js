@@ -1,4 +1,4 @@
-const dataContainer = (id) => {
+const changeDisplay = (id) => {
     let data = document.getElementById(id)
         if (data.classList.contains('hide')) {
             data.classList.remove('hide')
@@ -9,13 +9,26 @@ const dataContainer = (id) => {
         }
 }
 
+const changeToHideDisplay = (id) => {
+    let data = document.getElementById(id)
+    if (data.classList.contains('block')) {
+        data.classList.remove('block')
+        data.classList.add('hide')
+    }
+}
+
+const changeToBlockDisplay = (id) => {
+    let data = document.getElementById(id)
+    if (data.classList.contains('hide')) {
+        data.classList.remove('hide')
+        data.classList.add('block')
+    }
+}
+
 const LargeDeviceProfile = () => {
-    educationLargeDeviceContainer.classList.remove('block')
-    educationLargeDeviceContainer.classList.add('hide')
-    workExperienceLargeDeviceContainer.classList.remove('block')
-    workExperienceLargeDeviceContainer.classList.add('hide')
-    profileLargeDeviceContainer.classList.remove('hide')
-    profileLargeDeviceContainer.classList.add('block')
+    changeToHideDisplay("educationLargeDeviceContainer")
+    changeToHideDisplay("workExperienceLargeDeviceContainer")
+    changeToBlockDisplay("profileLargeDeviceContainer")
     document.getElementById('profileLargeDeviceContainer').innerHTML = `
         <div class="r-flex">
             <ul class="white style-cleaner c-flex appear">
@@ -69,12 +82,9 @@ const LargeDeviceProfile = () => {
 }
 
 const LargeDeviceEducation = () => { 
-    profileLargeDeviceContainer.classList.add('hide')
-    profileLargeDeviceContainer.classList.remove('block')
-    workExperienceLargeDeviceContainer.classList.add('hide')
-    workExperienceLargeDeviceContainer.classList.remove('block')
-    educationLargeDeviceContainer.classList.remove('hide')
-    educationLargeDeviceContainer.classList.add('block')
+    changeToHideDisplay("profileLargeDeviceContainer")
+    changeToHideDisplay("workExperienceLargeDeviceContainer")
+    changeToBlockDisplay("educationLargeDeviceContainer")
     document.getElementById('webDeveloperLargeDeviceContainer').innerHTML = `
         <p>Curso realizado en <a href="https://www.coderhouse.com/" class="white">Coderhouse</a></p>
         <ul class="txt-left">
@@ -123,7 +133,7 @@ const LargeDeviceEducation = () => {
     `
     document.getElementById('othersLargeDeviceContainer').innerHTML = `
         <ul class="txt-left appear">
-            <p class="txt-center line-height-1 pb-1 mx-1">Curso de fundamentos básicos de la programación impulsado por el gobierno argentino <a href="https://www.argentina.gob.ar/produccion/argentina-programa/primera-etapa" target="blank" class="white">#SéProgramar:</a></p>
+            <p class="txt-center line-height-1 pb-1">Curso de fundamentos básicos de la programación impulsado por el gobierno argentino <a href="https://www.argentina.gob.ar/produccion/argentina-programa/primera-etapa" target="blank" class="white">#SéProgramar:</a></p>
             <h5 class="txt-center mt-2">Fundamentos:</h5>
             <li class="r-flex justify-content-center py-1">
                 <img src="./assets/images/icons/gobstones.png" alt="Icono de CSS" width="50">
@@ -173,12 +183,9 @@ const LargeDeviceEducation = () => {
 }
 
 const LargeDeviceWorkExperience = () => { 
-    profileLargeDeviceContainer.classList.add('hide')
-    profileLargeDeviceContainer.classList.remove('block')
-    educationLargeDeviceContainer.classList.add('hide')
-    educationLargeDeviceContainer.classList.remove('block')
-    workExperienceLargeDeviceContainer.classList.remove('hide')
-    workExperienceLargeDeviceContainer.classList.add('block')
+    changeToHideDisplay("profileLargeDeviceContainer")
+    changeToHideDisplay("educationLargeDeviceContainer")
+    changeToBlockDisplay("workExperienceLargeDeviceContainer")
     document.getElementById('developerWorkExperienceLargeDeviceContainer').innerHTML = `
         <ul class="txt-center mx-1 style-cleaner appear white">
             <li class="r-flex justify-content-center my-2 appear">

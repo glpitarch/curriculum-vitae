@@ -45,3 +45,28 @@
         margin-bottom: 2rem;
     }
 }
+
+.change-bg-color {
+    animation-duration: 2s;
+    animation-name: change-bg-color;
+}
+
+@keyframes change-bg-color {
+    0% {
+        background-color: grey;
+    }
+    100% {
+    }
+}
+
+.bounce:hover {
+    animation-name: bounce;
+    animation-timing-function: ease;
+}
+
+@keyframes bounce {
+  0%   { transform: translateY(-1rem); }
+  100% { transform: translateY(0rem); }
+}
+
+
