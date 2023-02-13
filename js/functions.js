@@ -8,7 +8,6 @@ const changeDisplay = (id) => {
             data.classList.add('hide')
         }
 }
-
 const changeToHideDisplay = (id) => {
     let data = document.getElementById(id)
     if (data.classList.contains('block')) {
@@ -16,7 +15,6 @@ const changeToHideDisplay = (id) => {
         data.classList.add('hide')
     }
 }
-
 const changeToBlockDisplay = (id) => {
     let data = document.getElementById(id)
     if (data.classList.contains('hide')) {
@@ -24,7 +22,6 @@ const changeToBlockDisplay = (id) => {
         data.classList.add('block')
     }
 }
-
 const LargeDeviceProfile = () => {
     changeToHideDisplay("educationLargeDeviceContainer")
     changeToHideDisplay("workExperienceLargeDeviceContainer")
@@ -80,7 +77,6 @@ const LargeDeviceProfile = () => {
         </div>
     `
 }
-
 const LargeDeviceEducation = () => { 
     changeToHideDisplay("profileLargeDeviceContainer")
     changeToHideDisplay("workExperienceLargeDeviceContainer")
@@ -181,7 +177,6 @@ const LargeDeviceEducation = () => {
         </ul>
     `
 }
-
 const LargeDeviceWorkExperience = () => { 
     changeToHideDisplay("profileLargeDeviceContainer")
     changeToHideDisplay("educationLargeDeviceContainer")
