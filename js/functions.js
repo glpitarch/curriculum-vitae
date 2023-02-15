@@ -56,21 +56,21 @@ const LargeDeviceProfile = () => {
                     <h4 class="txt-center">Linkedin</h4>
                     <div class="r-flex">
                         <img src="./assets/images/icons/linkedin.png" alt="Icono de Linkedin" width="50">
-                        <span class="align-self-center mx-1"><a href="https://www.linkedin.com/" target="blank" class="white">www.linkedin.com</a></span>
+                        <span class="align-self-center mx-1"><a href="https://www.linkedin.com/in/germ%C3%A1n-leandro-pitarch-a9368a266/" target="blank" class="white">www.linkedin.com</a></span>
                     </div>
                 </li>
                 <li class="my-2 ml-2">
                     <h4 class="txt-center">Twitter</h4>
                     <div class="r-flex">
                         <img src="./assets/images/icons/twitter.png" alt="Icono de Twitter" width="50">
-                        <span class="align-self-center mx-1"><a href="https://twitter.com/?lang=es" target="blank" class="white">www.twitter.com</a></span>
+                        <span class="align-self-center mx-1"><a href="https://twitter.com/leandro_pitarch" target="blank" class="white">www.twitter.com</a></span>
                     </div>
                 </li>
                 <li class="my-2 ml-2">
                     <h4 class="txt-center">Instagram</h4>
                     <div class="r-flex">
                         <img src="./assets/images/icons/instagram.png" alt="Icono de Instagram" width="50">
-                        <span class="align-self-center mx-1"><a href="https://www.instagram.com/" target="blank" class="white">www.instagram.com</a></span>
+                        <span class="align-self-center mx-1"><a href="https://www.instagram.com/leandro_pitarch/" target="blank" class="white">www.instagram.com</a></span>
                     </div>
                 </li>
             </ul>
