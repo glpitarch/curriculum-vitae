@@ -28,8 +28,17 @@ main {
 .bg-grey {
   background-color: grey; }
 
+.bg-light-green {
+  background-color: #60a85b; }
+
+.bg-light-red {
+  background-color: #af6565; }
+
 .m-0 {
   margin: 0; }
+
+.mb-0-5 {
+  margin-bottom: 0.5rem; }
 
 .mb-2 {
   margin-bottom: 2rem; }
@@ -69,6 +78,10 @@ main {
 
 .pr-1 {
   padding-right: 0.5rem; }
+
+.py-0-5 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem; }
 
 .py-1 {
   padding-top: 1rem;

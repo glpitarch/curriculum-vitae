@@ -14,9 +14,10 @@ technologistWorkExperiencePhoneTitle.addEventListener('click', () => { changeDis
 
 /*----------///_DIMENSION 768px>=_///----------*/
 /*----------/_List Icons_/----------*/
-largeDeviceProfileIcon.addEventListener('click', LargeDeviceProfile)
-largeDeviceEducationIcon.addEventListener('click', LargeDeviceEducation)
-largeDeviceWorkExperienceIcon.addEventListener('click', LargeDeviceWorkExperience)
+largeDeviceProfileIcon.addEventListener('click', largeDeviceProfile)
+largeDeviceEducationIcon.addEventListener('click', largeDeviceEducation)
+largeDeviceWorkExperienceIcon.addEventListener('click', largeDeviceWorkExperience)
+contactFormIcon.addEventListener('click', contactForm)
 /*----------/_Education_/----------*/
 webDeveloperLargeDeviceTitle.addEventListener('click', () => { changeDisplay("webDeveloperLargeDeviceContainer") })
 javascriptLargeDeviceTitle.addEventListener('click', () => { changeDisplay("javascriptLargeDeviceContainer") })

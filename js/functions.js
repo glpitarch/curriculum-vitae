@@ -22,9 +22,10 @@ const changeToBlockDisplay = (id) => {
         data.classList.add('block')
     }
 }
-const LargeDeviceProfile = () => {
+const largeDeviceProfile = () => {
     changeToHideDisplay("educationLargeDeviceContainer")
     changeToHideDisplay("workExperienceLargeDeviceContainer")
+    changeToHideDisplay("contactFormContainer")
     changeToBlockDisplay("profileLargeDeviceContainer")
     document.getElementById('profileLargeDeviceContainer').innerHTML = `
         <div class="r-flex">
@@ -77,9 +78,10 @@ const LargeDeviceProfile = () => {
         </div>
     `
 }
-const LargeDeviceEducation = () => { 
+const largeDeviceEducation = () => { 
     changeToHideDisplay("profileLargeDeviceContainer")
     changeToHideDisplay("workExperienceLargeDeviceContainer")
+    changeToHideDisplay("contactFormContainer")
     changeToBlockDisplay("educationLargeDeviceContainer")
     document.getElementById('webDeveloperLargeDeviceContainer').innerHTML = `
         <p>Curso realizado en <a href="https://www.coderhouse.com/" class="white">Coderhouse</a></p>
@@ -177,9 +179,10 @@ const LargeDeviceEducation = () => {
         </ul>
     `
 }
-const LargeDeviceWorkExperience = () => { 
+const largeDeviceWorkExperience = () => { 
     changeToHideDisplay("profileLargeDeviceContainer")
     changeToHideDisplay("educationLargeDeviceContainer")
+    changeToHideDisplay("contactFormContainer")
     changeToBlockDisplay("workExperienceLargeDeviceContainer")
     document.getElementById('developerWorkExperienceLargeDeviceContainer').innerHTML = `
         <ul class="txt-center mx-1 style-cleaner appear white">
@@ -200,5 +203,40 @@ const LargeDeviceWorkExperience = () => {
                 Centro de Educación Médica e Investigaciones Clínicas “Norberto Quirno” (CEMIC) (actualidad)
             </li>
         </ul>
+    `
+}
+
+const contactForm = () => {
+    changeToHideDisplay("profileLargeDeviceContainer")
+    changeToHideDisplay("educationLargeDeviceContainer")
+    changeToHideDisplay("workExperienceLargeDeviceContainer")
+    changeToBlockDisplay("contactFormContainer")
+    document.getElementById('contactFormContainer').innerHTML = `
+        <form action="mailto:glpitarch@gmail.com?subject=Contacto mediante formulario" method="post" enctype="text/plain" class="white appear txt-center">
+            <div class="c-flex">
+                <label class="mb-0-5">Nombre de contacto</label>
+                <input id="nameContact" class="txt-center py-0-5" type="text" placeholder="Escriba su nombre aquí" name="Nombre de contacto: "></input>
+            </div>
+            <div class="c-flex my-2">
+                <label class="mb-0-5">Dirección de e-mail</label>
+                <input id="emailContact" class="txt-center py-0-5" type="email" placeholder="ejemplo@servidor.com" name="Email de contacto: "></input>
+            </div>
+            <div class="c-flex">
+                <label class="mb-0-5">País</label>
+                <input id="countryContact" class="txt-center py-0-5" type="text" placeholder="Escriba su país aquí" name="Pais: "></input>
+            </div>
+            <div class="c-flex my-2">
+                <label class="mb-0-5">Teléfono de contacto</label>
+                <input id="phoneContact" class="txt-center py-0-5" type="tel" placeholder="Escriba algún número de teléfono aquí" name="Telefono de contacto: "></input>
+            </div>
+            <div class="c-flex">
+                <label class="mb-0-5">Mensaje</label>
+                <textarea id="msgContact" placeholder="Escriba su mensaje aquí" name="Mensaje: " rows="10" cols="40" class="txt-center py-0-5"></textarea>
+            </div>
+            <div class="c-flex my-2">
+                <input id="submitButton" class="bg-light-green py-0-5" type="submit"></input>
+                <input class="bg-light-red my-2 py-0-5" type="reset"></input>
+            </div>
+        </form>
     `
 }
