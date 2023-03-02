@@ -13,6 +13,6 @@ El proyecto es full responsive y fue realizado con la premisa "mobile first" (no
           2.1. El código correspondiente a esta dimensión de dispositivos es creado dinamicamente mediante JS al clickear entre las distintas secciones y apartados.
           2.2. La estructura principal del código que define la localización de aquel generado por JS se encuentra en el contenedor "largeDeviceContainer".
 
-## LINK a GITHUB PAGES:
+## LINK del proyecto en GITHUB PAGES:
 
 https://glpitarch.github.io/curriculum-vitae/
